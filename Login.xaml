@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bomba_De_Agua.Login"
+             Title="Login">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="0" 
+                     Padding="20,20,34,0">
+
+            <Grid Margin="0,20,0,0">
+                <Label Text="Bienvenidos" 
+                FontSize="30" 
+                Padding="90,15,0,0"
+                FontAttributes="Bold"/>
+            </Grid>
+
+            <Grid Margin="0,20,0,0">
+                <Label Text="Iniciar Sesión"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0,30,0,0"/>
+            </Grid>
+
+            <Grid>
+                <Label Text="!Hola¡ Qué bueno verte de nuevo"
+                       FontSize="15"/>
+            </Grid>
+
+            <VerticalStackLayout Margin="0,50,0,0">
+                <Label Text="Correo"
+                       FontSize="17"
+                       TextColor="Red"/>
+                
+                <Entry Placeholder="Ingresa correo" 
+                       Margin="0,0,0,0"
+                       FontSize="17"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="0,50,0,0">
+                <Label Text="Contraseña"
+                       FontSize="17"
+                       TextColor="Red"/>
+                
+                <Entry Placeholder="Ingresa contraseña" 
+                       Margin="0,0,0,0"
+                       FontSize="17"
+                       IsPassword="True"/>
+            </VerticalStackLayout>
+
+            <Button Text="Iniciar Sesión" 
+                    CornerRadius="10" 
+                    BackgroundColor="Red" 
+                    TextColor="White" 
+                    Margin="0,50,0,0"
+                    WidthRequest="160"
+                    FontSize="17"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"/>
+
+            <Button Text="Continuar con Google"
+                FontSize="17"
+                ImageSource="logo_de_google.png"
+                FontAttributes="Bold"
+                BackgroundColor="#f3f3f3"
+                TextColor="Black"
+                CornerRadius="20"
+                Padding="0,0,9,0"
+                WidthRequest="240"
+                HeightRequest="45"
+                HorizontalOptions="Center"
+                Margin="0,75,0,0"/>
+            
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
