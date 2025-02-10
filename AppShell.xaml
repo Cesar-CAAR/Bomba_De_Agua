@@ -9,7 +9,7 @@
     Shell.FlyoutWidth="250"
     FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <Shell.FlyoutHeader>
+    <Shell.FlyoutHeader Route="Inicio">
         <StackLayout BackgroundColor="White" Padding="10">
             <Image Source="dotnet_bot.png" HeightRequest="80" HorizontalOptions="Center"/>
         </StackLayout>
@@ -21,11 +21,11 @@
     </FlyoutItem>
 
     <FlyoutItem Title="Historial" Icon="historial_dos.png">
-        <ShellContent ContentTemplate="{DataTemplate local:Inicio}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:Historial}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Temporizador" Icon="temporizador_tres.png">
-        <ShellContent ContentTemplate="{DataTemplate local:Inicio}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:Temporizador}"/>
     </FlyoutItem>
 
 
