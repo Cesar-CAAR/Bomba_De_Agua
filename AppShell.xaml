@@ -4,12 +4,30 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Bomba_De_Agua"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Bomba_De_Agua">
+    Shell.FlyoutBehavior="Flyout"
+    Shell.BackgroundColor="White"
+    Shell.FlyoutWidth="250"
+    FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <StackLayout BackgroundColor="White" Padding="10">
+            <Image Source="dotnet_bot.png" HeightRequest="80" HorizontalOptions="Center"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+
+    <FlyoutItem Title="Inicio" Icon="inicio_uno.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Inicio}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Historial" Icon="historial_dos.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Inicio}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Temporizador" Icon="temporizador_tres.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Inicio}"/>
+    </FlyoutItem>
+
+
 
 </Shell>
